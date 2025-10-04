@@ -1,5 +1,4 @@
+import {createAction} from "@reduxjs/toolkit";
 import {FILTER_TASKS} from "./type";
 
-export const filterTasks = (keyword) => {
-  return {type: FILTER_TASKS, payload: keyword};
-};
+export const filterTasks = createAction(FILTER_TASKS);

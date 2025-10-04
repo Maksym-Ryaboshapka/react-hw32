@@ -1,14 +1,12 @@
-import {FILTER_TASKS} from "./type";
-import {filterInitalState} from "../initalState";
+import {createReducer} from "@reduxjs/toolkit";
+import {filterTasks} from "./action";
 
-const filterReducer = (state = filterInitalState, action) => {
-  switch (action.type) {
-    case FILTER_TASKS:
-      return action.payload;
+const initialState = "";
 
-    default:
-      return state;
-  }
-};
+const filterReducer = createReducer(initialState, builder => {
+  builder.addCase(filterTasks, (state, action) => {
+    return action.payload;
+  });
+});
 
 export default filterReducer;

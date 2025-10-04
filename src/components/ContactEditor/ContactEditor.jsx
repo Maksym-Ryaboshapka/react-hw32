@@ -1,6 +1,6 @@
 import {useDispatch} from "react-redux";
 import {v4 as uuid} from "uuid";
-import {addContact} from "../../redux/contacts/action";
+import {addContact} from "../../redux/contactsSlice";
 
 const ContactEditor = () => {
   const dispatch = useDispatch();

@@ -1,7 +1,7 @@
 {
-  "name": "react-hw31",
+  "name": "react-hw32",
   "version": "0.1.0",
-  "homepage": "https://maksym-ryaboshapka.github.io/react-hw31/",
+  "homepage": "https://maksym-ryaboshapka.github.io/react-hw32/",
   "private": false,
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
